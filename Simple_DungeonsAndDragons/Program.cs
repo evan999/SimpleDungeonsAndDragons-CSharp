@@ -10,6 +10,11 @@ namespace Simple_DungeonsAndDragons
     {
         static void Main(string[] args)
         {
+            GameRound gameRound = new GameRound();
+            int result = gameRound.RollGameDie();           
+            gameRound.IsCriticalHit(result);
+            gameRound.IsCriticalMiss(result);
+            Console.ReadLine();
         }
     }
 }
